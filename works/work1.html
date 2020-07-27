@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>sweet</title>
+  <link rel="stylesheet" href="stylew1.css">
+  <style type="text/css">
+    #parent {
+      position: relative;
+    }
+    #parent img {
+      transition: all 500ms 0s ease;
+      position: absolute; top: 0; left: 0;
+    }
+    .on {
+      opacity: 1;
+    }
+    .off {
+      opacity: 0;
+    }
+  </style>
+
+</head>
+<body>
+    <header class="head">
+        <a href="../index.html"><h1>Home</h1></a>
+        <nav>
+          <ul>
+            <a href="work1.html"><li>Sweet</li></a>
+            <a href="work2.html"><li>Sample Site1</li></a>
+            <a href="work3.html"><li>Sample Site2</li></a>
+            <a href="work4.html"><li>ImageColors</li></a>
+          </ul>
+        </nav>
+      </header>
+    <section class="title">
+        <h2 class="titletext">Sweet</h2>
+    </section>
+    <section class="texts">
+        <div class="text">スイーツのレシピサイト</div>
+        <div class="text2">Webデザインの授業で制作。簡単なhtmlの設定と画像の設定のみ行った。</div>
+     </section>
+     <section class="work">
+         <button onclick="func1()">Change Image</button><br>
+        <div id="parent">
+          <img src="img/image11.jpg" border="1" width="750" height="500" id="image1">
+          <img src="img/image12.jpg" border="1" width="750" height="500" id="image2">
+          <img src="img/image13.jpg" border="1" width="750" height="500" id="image3">
+        </div>
+        <script language="javascript" type="text/javascript">
+            let idx = 1;
+              func1();
+              function func1() {
+                for(let i=1; i<=3; i++) {
+                  if(i==idx){
+                    document.getElementById(`image${i}`).classList.remove('off');
+                    document.getElementById(`image${i}`).classList.add('on');
+                  } else {
+                    document.getElementById(`image${i}`).classList.add('off');
+                    document.getElementById(`image${i}`).classList.remove('on');
+                  }
+                }
+                idx = idx == 3 ? 1 : idx+1;
+              }
+        </script>  
+     </section>
+        
