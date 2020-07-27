@@ -1,0 +1,27 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head {
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    position: fixed;
+    background: rgb(253, 253, 230);
+    width: 100%;
+    border: 1px solid #000000;
+}
+.head h1 {
+    flex: 1;
+}
+.head nav ul {
+    list-style: none;
+    display: flex;
+}
+.head nav ul li {
+    padding: 1rem;
+}

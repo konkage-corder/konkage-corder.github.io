@@ -1,0 +1,55 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head {
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    position: fixed;
+    background: rgb(253, 253, 230);
+    width: 100%;
+    border: 1px solid #000000;
+}
+.head h1 {
+    flex: 1;
+}
+.head nav ul {
+    list-style: none;
+    display: flex;
+}
+.head nav ul li {
+    padding: 1rem;
+}
+.title {
+    height: 90vh;
+    background: rgb(255, 255, 249);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    flex-direction: column;
+}
+.titletext {
+    font-size: 4rem;
+    letter-spacing: 0.05rem;
+    margin: 3rem;
+    color: rgb(255, 203, 124);
+}
+.texts {
+    text-align: center;
+}
+.text {
+    font-size: 3rem;
+}
+.text2 {
+    font-size: 1.5rem;
+}
+.work {
+    margin: 3rem 22rem 35rem 22rem;
+    text-align: center;
+}
