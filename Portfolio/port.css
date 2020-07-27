@@ -1,0 +1,45 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head {
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    position: fixed;
+    background: rgb(246, 248, 229);
+    width: 100%;
+    border: 1px solid #000000;
+}
+.head h1 {
+    flex: 1;
+}
+.head nav ul {
+    list-style: none;
+    display: flex;
+}
+.head nav ul li {
+    padding: 1rem;
+}
+.title {
+    height: 90vh;
+    background: rgb(234, 248, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    flex-direction: column;
+}
+.titletext {
+    font-size: 4rem;
+    letter-spacing: 0.05rem;
+    margin: 3rem;
+    color: rgb(187, 187, 187);
+}
+.profile {
+    color: #383838;
+}
